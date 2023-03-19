@@ -1,7 +1,7 @@
 //your code here
 
-
-	touristSpots.sort((a,b)=>{
+function sortfunc(touristSpots){
+		touristSpots.sort((a,b)=>{
    let a1 = a.replace(/(the |a |an )/i, "");
    let b1 = b.replace(/(the |a |an )/i, "");
 
@@ -22,5 +22,10 @@ for(let val of touristSpots){
    liobj.innerHTML = val;
    document.getElementById("band").appendChild(liobj);
 }
+
+
+	return touristSpots;
+}
+
 
 
