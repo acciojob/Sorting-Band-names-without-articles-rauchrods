@@ -21,7 +21,7 @@ function sortfunc(touristSpots){
 for(let val of touristSpots){
   let liobj = document.createElement("li");
    liobj.innerHTML = val;
-   document.getElementById("band").appendChild(liobj);
+   document.getElementById("bands").appendChild(liobj);
 }
 
 
